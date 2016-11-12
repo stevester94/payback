@@ -5,14 +5,14 @@ body {
 div {
   width: 1400px;
   height: 700px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   /*position: fixed;*/
   margin-left: 100px;
   overflow: hidden; /* prevents child margin moving the parent */
 }
 
 #camera_button_block {
-  width: 50px;
+  width: 60px;
   height: 50px;
   margin-left: 650px;
   margin-top: 300px;
@@ -21,7 +21,7 @@ div {
 }
 
 #camera_button {
-  width: 50px;
+  width: 60px;
   height: 50px;
 
 }
