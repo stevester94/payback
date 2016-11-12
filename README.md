@@ -2,12 +2,13 @@ PayMe -- A cutting edge and innovative technical solution to splitting restauran
 
 Developed for Calhacks 3.0 @ UC Berkeley.
 
+
 Developed by UC Davis Students/Alumni:
 
-Christopher Ta
+  Christopher Ta
 
-Steven Mackey
+  Steven Mackey
 
-Jason Zhang
+  Jason Zhang
 
-Brian Khieu
+  Brian Khieu
