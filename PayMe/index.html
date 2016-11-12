@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Pay Me</title>
+  </head>
+
+  <div class="main">
+    <div id="welcome_block">
+      Welcome to Pay Me! First, take a picture of your reciept.
+    </div>
+
+    <div class="camera_button_block">
+      <span class="camera_image">
+        <input type="file" class="camera_button" id="take-picture"/>
+      </span>
+      <br />
+
+            <!-- <img src="about:blank" alt="" id="show-picture" width="50%" height="50%">
+                 <button id="camera_button" type="button" name="button">
+                 </button>
+            -->
+    </div>
+    <div class="preview_img">
+      <img src="about:blank" alt="" id="show-picture" width="250" height="250">
+      <script src="script.js"></script>
+    </div>
+    <!-- THIS IS WHERE YOU GRAB THE DATA FILE STRING
+    <div class="grab_url">
+      <button onclick="grabURL()">Grab URL</button>
+      <p id="demo"></p>
+      <script>
+        function grabURL() {
+          var x = document.getElementById("show-picture").src;
+          document.getElementById("demo").innerHTML = x;
+          console.log("Finished Grabbing");
+        }
+      </script>
+      <script src="script.js"></script>
+    </div>
+    -->
+    <div id="page1_block">
+      <button onclick="location.href='analyze_receipt.html'" type="button" name="next_link">
+        <!-- <input type="file" id="camera_button" accept="image/*"> -->
+        Click here after you have uploaded the receipt.
+      </button>
+    </div>
+  </div>
+  <body>
+
+  </body>
+</html>
