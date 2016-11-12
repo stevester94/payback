@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSSample</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+    $(function() {
+        var params = {
+            // Request parameters
+            "language": "en",
+            "detectOrientation ": "true",
+        };
+      
+        $.ajax({
+            url: "https://api.projectoxford.ai/vision/v1.0/ocr?" + $.param(params),
+            beforeSend: function(xhrObj){
+                // Request headers
+                xhrObj.setRequestHeader("Content-Type","application/json");
+                xhrObj.setRequestHeader("dbe555d1130540c3895bab329405b236","{subscription key}");
+            },
+            type: "POST",
+            // Request body
+            data: "{https://raw.githubusercontent.com/CTaCDE/payback/master/Receipt%204.0-min.jpg}",
+        })
+        .done(function(data) {
+            alert("success");
+        })
+        .fail(function() {
+            alert("error :(");
+        });
+    });
+</script>
+</body>
+</html>
